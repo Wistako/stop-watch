@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Container from "./components/container/Container.js";
 function App() {
   const [time, setTime] = useState(0);
-  const [timer, setTimer] = useState([]);
+  const [timer, setTimer] = useState();
   const start = () => {
     if(!timer){
       setTimer(setInterval(() => {
